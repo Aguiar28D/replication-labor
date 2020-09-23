@@ -1,8 +1,5 @@
 # [Journal of Labor Economics, 2020, vol. 38, no. 2] [A Pleasure That Hurts: The Ambiguous Effects of Elite Tutoring on Underprivileged High School Students] Validation and Replication results
 
-> INSTRUCTIONS: Once you've read these instructions, DELETE THESE AND SIMILAR LINES.
-> In the above title, replace [Manuscript Title] with the actual title of the paper, and [MC number] with the Manuscript Central number (e.g., AEJPol-2017-0097)
-> Go through the steps to download and attempt a replication. Document your steps here, the errors generated, and the steps you took to alleviate those errors.
 
 > Some useful links:
 > - [Official Data and Code Availability Policy](https://www.aeaweb.org/journals/policies/data-code)
