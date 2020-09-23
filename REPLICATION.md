@@ -1,6 +1,5 @@
 # [Journal of Labor Economics, 2020, vol. 38, no. 2] [A Pleasure That Hurts: The Ambiguous Effects of Elite Tutoring on Underprivileged High School Students] Validation and Replication results
 
-
 > Some useful links:
 > - [Official Data and Code Availability Policy](https://www.aeaweb.org/journals/policies/data-code)
 > - [Unofficial Verification Guidance](https://social-science-data-editors.github.io/guidance/Verification_guidance.html) for additional tips and criteria.
@@ -17,17 +16,11 @@ Data description
 
 ### Data Sources
 
-> INSTRUCTIONS: Identify all INPUT data sources. Create a list (and commit the list together with this report) (not needed if filling out the "Data Citation and Information report"). For each data source, list in THIS document presence or absence of source, codebook/information on the data, and summary statistics. Summary statistics and codebook may not be necessary if they are available for public use data. In all cases, if the author of the article points to an online location for such information, that is OK. Check for data citation. IN THIS DOCUMENT, point out only a summary of shortcomings.
-
 Data is provided and has been uploaded as the file talens_replication. 
 
 ### Analysis Data Files
 
-> INSTRUCTIONS: Separately, identify any analysis data file provided. Analysis data files are produced by code in the deposit from data sources. Not every deposit will have these.
-
 - [ ] Analysis data files mentioned, provided. File names listed below.
-
-> INSTRUCTIONS: List all provided filenames here. For large deposits, this can be done using the "Git Bash" program:
 > > find . talens_replication.dta
 
 Example:
