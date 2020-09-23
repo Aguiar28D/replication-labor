@@ -19,23 +19,16 @@ Data description
 
 > INSTRUCTIONS: Identify all INPUT data sources. Create a list (and commit the list together with this report) (not needed if filling out the "Data Citation and Information report"). For each data source, list in THIS document presence or absence of source, codebook/information on the data, and summary statistics. Summary statistics and codebook may not be necessary if they are available for public use data. In all cases, if the author of the article points to an online location for such information, that is OK. Check for data citation. IN THIS DOCUMENT, point out only a summary of shortcomings.
 
-#### Example data
-
-- Data is not provided, but a link is provided in the README
-- Access conditions are not described. It turns out, the website requires registration and payment of a fee
-- The data is not cited in the paper nor in the README.
+Data is provided and has been uploaded as the file talens_replication. 
 
 ### Analysis Data Files
 
 > INSTRUCTIONS: Separately, identify any analysis data file provided. Analysis data files are produced by code in the deposit from data sources. Not every deposit will have these.
 
-- [ ] No analysis data file mentioned
-- [ ] Analysis data files mentioned, not provided (explain reasons below)
 - [ ] Analysis data files mentioned, provided. File names listed below.
 
 > INSTRUCTIONS: List all provided filenames here. For large deposits, this can be done using the "Git Bash" program:
-> > find . -name \*.dta
-> will list all Stata datasets. Replace `dta` with `.Rdata` or any other extension to find other datafiles.
+> > find . talens_replication.dta
 
 Example:
 
