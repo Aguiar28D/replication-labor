@@ -16,12 +16,12 @@ Data description
 
 ### Data Sources
 
-Data is provided and has been uploaded as the file talens_replication. 
+Data is provided and has been uploaded as the file Data_for_A_Pleasure_That_Hurts_replication.dta 
 
 ### Analysis Data Files
 
 - [ ] Analysis data files mentioned, provided. File names listed below.
-> > find . talens_replication.dta
+> > find . Data_for_A_Pleasure_That_Hurts_replication.dta 
 
 Data deposit
 ------------
@@ -32,16 +32,11 @@ Data deposit
 
 > INSTRUCTIONS: Check that these requirements are met. 
 
-- [ ] README is in TXT, MD, PDF format. It is in PDF.
 - [ ] openICPSR deposit has no ZIP files
 - [ ] Title conforms to guidance (starts with "Data and Code for:" or "Code for:", is properly capitalized)
 - [ ] Authors (with affiliations) are listed in the same order as on the paper
 
 > INSTRUCTIONS: If any of the above are NOT checked, leave the related [REQUIRED] element here. Otherwise, delete the line.
-
-> [REQUIRED] Please ensure that a ASCII (txt), Markdown (md), or PDF version of the README are available in the data and code deposit.
-
-> [REQUIRED] openICPSR should not have ZIP files visible. ZIP files should be uploaded to openICPSR via "Import from ZIP" instead of "Upload Files". Please delete the ZIP files, and re-upload using the "Import from ZIP" function.
 
 > [REQUIRED] Please review the title of the openICPSR deposit as per our guidelines (below).
 
@@ -83,7 +78,6 @@ Data checks
 > INSTRUCTIONS: When data are present, run checks:
 > - can data be read (using software indicated by author)?
 > - Is data in archive-ready formats (CSV, TXT) or in custom formats (DTA, SAS7BDAT, Rdata)? Note: Numbers and Mathematica data files are not considered archive-safe and cannot be accepted. 
-> - Does the data have variable labels (Stata: run `describe using (name of DTA)` and check that there is content in the column "variable label")?
 > - Run check for PII ([PII_stata_scan.do](PII_stata_scan.do), sourced from [here](https://github.com/J-PAL/stata_PII_scan) if using Stata) and report results. Note: this check will have lots of false positives - fields it thinks might be sensitive that are not, in fact, sensitive. Apply judgement.
 
 
