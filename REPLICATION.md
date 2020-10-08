@@ -23,15 +23,6 @@ Data is provided and has been uploaded as the file talens_replication.
 - [ ] Analysis data files mentioned, provided. File names listed below.
 > > find . talens_replication.dta
 
-Example:
-
-```
-./Output_Empirical/data/census_shp/counties_coord.dta
-./Output_Empirical/data/census_shp/counties_db.dta
-./Output_Empirical/data/census_shp/state_coord.dta
-./Output_Empirical/data/census_shp/state_db.dta
-```
-
 Data deposit
 ------------
 
@@ -41,7 +32,7 @@ Data deposit
 
 > INSTRUCTIONS: Check that these requirements are met. 
 
-- [ ] README is in TXT, MD, PDF format
+- [ ] README is in TXT, MD, PDF format. It is in PDF.
 - [ ] openICPSR deposit has no ZIP files
 - [ ] Title conforms to guidance (starts with "Data and Code for:" or "Code for:", is properly capitalized)
 - [ ] Authors (with affiliations) are listed in the same order as on the paper
