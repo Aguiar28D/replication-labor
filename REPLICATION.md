@@ -1,9 +1,5 @@
 # [Journal of Labor Economics, 2020, vol. 38, no. 2] [A Pleasure That Hurts: The Ambiguous Effects of Elite Tutoring on Underprivileged High School Students] Validation and Replication results
 
-> Some useful links:
-> - [Official Data and Code Availability Policy](https://www.aeaweb.org/journals/policies/data-code)
-> - [Unofficial Verification Guidance](https://social-science-data-editors.github.io/guidance/Verification_guidance.html) for additional tips and criteria.
-
 Data description
 ----------------
 
