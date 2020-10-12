@@ -32,8 +32,6 @@ Data deposit
 
 > INSTRUCTIONS: Check that these requirements are met. 
 
-- [ ] openICPSR deposit has no ZIP files
-- [ ] Title conforms to guidance (starts with "Data and Code for:" or "Code for:", is properly capitalized)
 - [ ] Authors (with affiliations) are listed in the same order as on the paper
 
 > INSTRUCTIONS: If any of the above are NOT checked, leave the related [REQUIRED] element here. Otherwise, delete the line.
@@ -62,14 +60,6 @@ Data deposit
 
 - [NOTE] openICPSR metadata is sufficient.
 
-or
-
-- [REQUIRED] Please update the openICPSR metadata fields marked as (required), in order to improve findability of your data and code supplement. 
-
-and/or
-
-- [SUGGESTED] We suggest you update the openICPSR metadata fields marked as (suggested), in order to improve findability of your data and code supplement. 
-
 For additional guidance, see [https://aeadataeditor.github.io/aea-de-guidance/data-deposit-aea-guidance.html](https://aeadataeditor.github.io/aea-de-guidance/data-deposit-aea-guidance.html).
 
 Data checks
@@ -83,61 +73,24 @@ Data checks
 
 Code description
 ----------------
-> INSTRUCTIONS: Review the code (but do not run it yet). Identify programs that create "analysis files" ("data preparation code"). Identify programs that create tables and figures. Not every deposit will have separate programs for this.
-
-> INSTRUCTIONS: Identify all **Figure, Table, and any in-text numbers**. Create a list, mapping each of them to a particular program and line number within the program (use [this template](code-check-TEMPLATE.xlsx)). Commit that list. You will come back to the list in your findings. IN THIS SECTION, point out only a summary description, including of shortcomings. E.g.
-
 There are four provided Stata do files, three Matlab .m files, including a "master.do".
 
 - Table 5: could not identify code that produces Table 5
-- Neither the program codes, nor the README, identify which tables are produced by what program.
 
-> NOTE: In-text numbers that reference numbers in tables do not need to be listed. Only in-text numbers that correspond to no table or figure need to be listed.
 
 Stated Requirements
 ---------------------
 
-> INSTRUCTIONS: The authors may have specified specific requirements in terms of software, computer hardware, etc. Please list them here. This is **different** from the Computing Environment of the Replicator. You have the option to amend these with unstated requirements later. If all requirements are listed, check the box "Requirements are complete".
-
-- [ ] No requirements specified
-- [ ] Software Requirements specified as follows:
-  - Software 1
-  - Software 2
-- [ ] Computational Requirements specified as follows:
-  - Cluster size, etc.
-- [ ] Time Requirements specified as follows:
-  - Length of necessary computation (hours, weeks, etc.)
-
-- [ ] Requirements are complete.
-
-> If easier, simply copy-and-paste the authors' stated requirements here:
-
-
-Actual Requirements, if different
----------------------------------
-
-> INSTRUCTIONS: If it turns out that some requirements were not stated/ are incomplete (software, packages, operating system), please list the *complete* list of requirements here. If the stated requirements are complete, delete this section, including the requirement at the end.
+You should create an empty folder called "tables" within that folder; some of the tables will be outputted in that directory as .tex files in addition to being printed out in Stata.
 
 - [ ] Software Requirements 
   - [ ] Stata
-    - Packages go here
-  - [ ] Matlab
-  - [ ] R
-    - R packages go here
-  - [ ] REPLACE ME WITH OTHER
-- [ ] Computational Requirements specified as follows:
-  - Cluster size, etc.
-- [ ] Time Requirements 
-  - Length of necessary computation (hours, weeks, etc.)
-
-> [REQUIRED] Please amend README to contain complete requirements. 
-
-You can copy the section above, amended if necessary.
+    - command outreg2. (run the following command in Stata: ssc install outreg2)
 
 Computing Environment of the Replicator
 ---------------------
 
-> INSTRUCTIONS: This might be automated, for now, please fill in manually. Remove examples that are not relevant, adjust examples to fit special circumstances. Some of this is available from the standard log output in Stata or R. Some frequently used details are below. Some of these details can be found as follows:
+  > INSTRUCTIONS: This might be automated, for now, please fill in manually. Remove examples that are not relevant, adjust examples to fit special circumstances. Some of this is available from the standard log output in Stata or R. Some frequently used details are below. Some of these details can be found as follows:
 >
 > - (Windows) by right-clicking on "This PC"
 > - (Mac) Apple-menu > "About this Mac"
@@ -150,30 +103,25 @@ Computing Environment of the Replicator
 
 > INSTRUCTIONS: Please also list the software you used (specific versions). List only the ones you used, add any not listed in the examples:
 
-- Stata/MP 16.1
-- Matlab R2019a
-- Intel Compiler 3.14152
+- Stata/MP 14
 
 Replication steps
 -----------------
 
-> INSTRUCTIONS: provide details about your process of accessing the code and data.
-> Do NOT detail things like "I save them on my Desktop".
-> DO describe actions   that you did  as per instructions ("I added a config.do")
-> DO describe any other actions you needed to do ("I had to make changes in multiple programs"), without going into detail (the commit log can provide that information)
-
-Example:
-
-1. Downloaded code from URL provided.
-2. Downloaded data from URL indicated in the README. A sign-up was required (not indicated in README)
-3. Added the config.do generating system information, but commented out log creation, as author already creates log files.
-4. Ran code as per README, but the third step did not work.
-5. Made changes to the way the third step is run to get it to work.
+1. Downloaded the data file, the do file and the ado files and save in the same folder.
+2. Crate a new folder named "tables"
+3. Change the direction of the file in the do file. use YOURLOCATION, clear where YOURLOCATION is the specific location in your computer.
+4. In many parts of the code you will find the following: "{outregpath}" substitute it by "YOURLOCATION\tables\" 
+5. Install the packages outreg and outreg2. Use: ssc install outreg and ssc install outreg2
+6. Run the ado files.
+7. Run the do file. 
 
 Findings
 --------
 
 > INSTRUCTIONS: Describe your findings both positive and negative in some detail, for each **Data Preparation Code, Figure, Table, and any in-text numbers**. You can re-use the Excel file created under *Code Description*. When errors happen, be as precise as possible. For differences in figures, provide both a screenshot of what the manuscript contains, as well as the figure produced by the code you ran. For differences in numbers, provide both the number as reported in the manuscript, as well as the number replicated. If too many numbers, contact your supervisor.
+
+1. Cannot produce Table 3. 
 
 ### Data Preparation Code
 
@@ -240,8 +188,6 @@ Classification
 
 ### Reason for incomplete reproducibility
 
-> INSTRUCTIONS: mark the reasons here why full reproduciblity was not achieved, and enter this information in JIRA
-
 - [ ] `Discrepancy in output` (either figures or numbers in tables or text differ)
 - [ ] `Bugs in code`  that  were fixable by the replicator (but should be fixed in the final deposit)
 - [ ] `Code missing`, in particular if it  prevented the replicator from completing the reproducibility check
@@ -249,4 +195,6 @@ Classification
 - [ ] `Software not available to replicator`  may happen for a variety of reasons, but in particular (a) when the software is commercial, and the replicator does not have access to a licensed copy, or (b) the software is open-source, but a specific version required to conduct the reproducibility check is not available.
 - [ ] `Insufficient time available to replicator` is applicable when (a) running the code would take weeks or more (b) running the code might take less time if sufficient compute resources were to be brought to bear, but no such resources can be accessed in a timely fashion (c) the replication package is very complex, and following all (manual and scripted) steps would take too long.
 - [ ] `Data missing` is marked when data *should* be available, but was erroneously not provided, or is not accessible via the procedures described in the replication package
+
+
 - [ ] `Data not available` is marked when data requires additional access steps, for instance purchase or application procedure. 
