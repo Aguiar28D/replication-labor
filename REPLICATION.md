@@ -12,9 +12,6 @@ Data is provided and has been uploaded as the file Data_for_A_Pleasure_That_Hurt
 - [ ] Analysis data files mentioned, provided. File names listed below.
 > > find . Data_for_A_Pleasure_That_Hurts_replication.dta 
 
-Data deposit
-------------
-
 Code description
 ----------------
 There are seven files. 
