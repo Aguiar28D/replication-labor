@@ -4,13 +4,6 @@
 > - [Official Data and Code Availability Policy](https://www.aeaweb.org/journals/policies/data-code)
 > - [Unofficial Verification Guidance](https://social-science-data-editors.github.io/guidance/Verification_guidance.html) for additional tips and criteria.
 
-SUMMARY
--------
-
-> INSTRUCTION: The Data Editor will fill this part out. It will be based on any [REQUIRED] and [SUGGESTED] action items that the report makes a note of. 
-
-> INSTRUCTION: ALWAYS do "Data description", "Code description". If data is present, ALWAYS do "Data checks". If time is sufficient (initial assessment!), do "Replication steps", if not, explain why not.
-
 Data description
 ----------------
 
@@ -27,19 +20,6 @@ Data deposit
 ------------
 
 > INSTRUCTIONS: Most deposits will be at openICPSR, but all need to be checked for complete metadata. Detailed guidance is at [https://aeadataeditor.github.io/aea-de-guidance/data-deposit-aea-guidance.html](https://aeadataeditor.github.io/aea-de-guidance/data-deposit-aea-guidance.html). 
-
-### Requirements 
-
-> INSTRUCTIONS: Check that these requirements are met. 
-
-- [ ] Authors (with affiliations) are listed in the same order as on the paper
-
-> INSTRUCTIONS: If any of the above are NOT checked, leave the related [REQUIRED] element here. Otherwise, delete the line.
-
-> [REQUIRED] Please review the title of the openICPSR deposit as per our guidelines (below).
-
-> [REQUIRED] Please review authors and affiliations on the openICPSR deposit. In general, they are the same, and in the same order, as for the manuscript; however, authors can deviate from that order.
-
 
 ### Deposit Metadata
 
