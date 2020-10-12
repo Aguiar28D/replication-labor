@@ -19,44 +19,13 @@ Data is provided and has been uploaded as the file Data_for_A_Pleasure_That_Hurt
 Data deposit
 ------------
 
-> INSTRUCTIONS: Most deposits will be at openICPSR, but all need to be checked for complete metadata. Detailed guidance is at [https://aeadataeditor.github.io/aea-de-guidance/data-deposit-aea-guidance.html](https://aeadataeditor.github.io/aea-de-guidance/data-deposit-aea-guidance.html). 
-
-### Deposit Metadata
-
-> INSTRUCTIONS: Some of these are specific to openICPSR (JEL, Manuscript Number). Others may or may not be present at other trusted repositories (Dataverse, Zenodo, etc.). Verify all items for openICPSR, check with supervisor for other deposits.
-
-- [ ] JEL Classification (required)
-- [ ] Manuscript Number (required)
-- [ ] Subject Terms (highly recommended)
-- [ ] Geographic coverage (highly recommended)
-- [ ] Time period(s) (highly recommended)
-- [ ] Collection date(s) (suggested)
-- [ ] Universe (suggested)
-- [ ] Data Type(s) (suggested)
-- [ ] Data Source (suggested)
-- [ ] Units of Observation (suggested)
-
-> INSTRUCTIONS: Go through the checklist above, and then choose ONE of the following results:
-
-- [NOTE] openICPSR metadata is sufficient.
-
-For additional guidance, see [https://aeadataeditor.github.io/aea-de-guidance/data-deposit-aea-guidance.html](https://aeadataeditor.github.io/aea-de-guidance/data-deposit-aea-guidance.html).
-
-Data checks
------------
-
-> INSTRUCTIONS: When data are present, run checks:
-> - can data be read (using software indicated by author)?
-> - Is data in archive-ready formats (CSV, TXT) or in custom formats (DTA, SAS7BDAT, Rdata)? Note: Numbers and Mathematica data files are not considered archive-safe and cannot be accepted. 
-> - Run check for PII ([PII_stata_scan.do](PII_stata_scan.do), sourced from [here](https://github.com/J-PAL/stata_PII_scan) if using Stata) and report results. Note: this check will have lots of false positives - fields it thinks might be sensitive that are not, in fact, sensitive. Apply judgement.
-
-
 Code description
 ----------------
-There are four provided Stata do files, three Matlab .m files, including a "master.do".
-
-- Table 5: could not identify code that produces Table 5
-
+There are seven files. 
+1. One provided Stata file. 
+2. One Stata do file.
+3. One pdf guide.
+4. Four Stata .ado files.
 
 Stated Requirements
 ---------------------
