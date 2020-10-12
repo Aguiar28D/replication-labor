@@ -71,7 +71,7 @@ Replication steps
 Findings
 --------
 
-I faced some problems with the reproducibility, but they can be solved by adding some lines to the instructions and adding two lines to the code. Overall I have to say that the authors provided all the materials that were needed in order to reproduce almost all of the tables provided. The do-file is easy to read and the different tables are easy to find. 
+I faced some problems with the reproducibility, but they can be solved by adding some lines to the instructions and an extra line to the code. Overall I have to say that the authors provided all the materials that were needed in order to reproduce almost all of the tables. The do-file is easy to read and the different tables are easy to find. 
 With little improvement in the instructions this reproducibility would have been extremely straight forward. 
 
 ### Tables
