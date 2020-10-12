@@ -11,7 +11,7 @@ Journal of Labor Economics
 clear
 clear matrix
 set more off, perm
-use talens_replication, clear
+use YOURLOCATION/Data_for_A_Pleasure_That_Hurts_replication.dta, clear
 
 
 /* Preamble: global variables and settings */
